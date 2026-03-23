@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F1A30"/>
+      <stop offset="100%" stop-color="#162040"/>
+    </linearGradient>
+    <!-- Gold gradient for text -->
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8C973"/>
+      <stop offset="50%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#B8922E"/>
+    </linearGradient>
+    <!-- Cobalt for geometric details -->
+    <linearGradient id="cobaltGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2D6DC2"/>
+      <stop offset="100%" stop-color="#1B4B8A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bg)"/>
+
+  <!-- Outer geometric border - octagonal frame -->
+  <polygon points="256,32 432,108 480,284 432,460 256,480 80,460 32,284 80,108"
+    fill="none" stroke="#1B4B8A" stroke-width="1.5" opacity="0.25"/>
+  <polygon points="256,52 416,120 460,280 416,444 256,462 96,444 52,280 96,120"
+    fill="none" stroke="#2A9D9D" stroke-width="0.8" opacity="0.15"/>
+
+  <!-- Corner star ornaments -->
+  <!-- Top -->
+  <g transform="translate(256,58)" opacity="0.3">
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="#D4A843" stroke-width="1"/>
+    <line x1="0" y1="-12" x2="0" y2="12" stroke="#D4A843" stroke-width="1"/>
+    <line x1="-8" y1="-8" x2="8" y2="8" stroke="#D4A843" stroke-width="0.7"/>
+    <line x1="-8" y1="8" x2="8" y2="-8" stroke="#D4A843" stroke-width="0.7"/>
+    <circle r="3" fill="#D4A843" opacity="0.5"/>
+  </g>
+  <!-- Bottom -->
+  <g transform="translate(256,454)" opacity="0.3">
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="#D4A843" stroke-width="1"/>
+    <line x1="0" y1="-12" x2="0" y2="12" stroke="#D4A843" stroke-width="1"/>
+    <line x1="-8" y1="-8" x2="8" y2="8" stroke="#D4A843" stroke-width="0.7"/>
+    <line x1="-8" y1="8" x2="8" y2="-8" stroke="#D4A843" stroke-width="0.7"/>
+    <circle r="3" fill="#D4A843" opacity="0.5"/>
+  </g>
+
+  <!-- Muqarnas-inspired arch at top -->
+  <path d="M140 180 Q140 90 256 90 Q372 90 372 180" fill="none" stroke="#1B4B8A" stroke-width="1.8" opacity="0.3"/>
+  <path d="M160 180 Q160 110 256 110 Q352 110 352 180" fill="none" stroke="#2A9D9D" stroke-width="1" opacity="0.2"/>
+  <!-- Mini arches (muqarnas cells) -->
+  <path d="M185 165 Q195 140 205 140 Q215 140 225 165" fill="none" stroke="#1B4B8A" stroke-width="0.8" opacity="0.2"/>
+  <path d="M225 165 Q235 140 245 140 Q255 140 265 165" fill="none" stroke="#1B4B8A" stroke-width="0.8" opacity="0.2"/>
+  <path d="M265 165 Q275 140 285 140 Q295 140 305 165" fill="none" stroke="#1B4B8A" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Central medallion circle behind text -->
+  <circle cx="256" cy="270" r="140" fill="none" stroke="#1B4B8A" stroke-width="1" opacity="0.12"/>
+  <circle cx="256" cy="270" r="120" fill="none" stroke="#2A9D9D" stroke-width="0.6" opacity="0.08"/>
+
+  <!-- SS Text - Cormorant-style serif letterforms -->
+  <text x="256" y="310" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+    font-size="220" font-weight="400" letter-spacing="12" fill="url(#gold)">SS</text>
+
+  <!-- Arabesque flourish under text -->
+  <path d="M160 360 Q200 345 230 360 Q256 375 282 360 Q312 345 352 360"
+    fill="none" stroke="#D4A843" stroke-width="1.2" opacity="0.35"/>
+  <circle cx="160" cy="360" r="2.5" fill="#D4A843" opacity="0.35"/>
+  <circle cx="352" cy="360" r="2.5" fill="#D4A843" opacity="0.35"/>
+  <circle cx="256" cy="372" r="2" fill="#D4A843" opacity="0.25"/>
+
+  <!-- Bottom ornamental line -->
+  <path d="M180 395 Q218 385 256 395 Q294 405 332 395"
+    fill="none" stroke="#2A9D9D" stroke-width="0.8" opacity="0.2"/>
+</svg>
