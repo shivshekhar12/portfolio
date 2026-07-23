@@ -1,16 +1,30 @@
-# React + Vite
+# SHIV.EXE — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio for Shiv Shekhar, styled as an old-school computer.
 
-Currently, two official plugins are available:
+Boot flow: black screen → retro BIOS/POST boot sequence (press any key to skip) →
+CRT power-on flash → a vintage media-player interface with an LCD marquee, VU
+meters, transport controls, and tabs for About / Experience / Projects / Skills /
+Contact rendered as a playlist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- React 19 + Vite
+- Plain CSS (no UI libraries) — CRT scanlines, LCD glow, and chassis are all CSS
+- Fonts: VT323 + Press Start 2P (Google Fonts)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Develop
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploy (GitHub Pages)
+
+```bash
+npm run deploy
+```
+
+Builds to `dist/` and publishes via `gh-pages`. The site is served under the
+`/portfolio/` base path (see `vite.config.js`).
